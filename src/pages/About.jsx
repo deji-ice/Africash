@@ -36,7 +36,7 @@ const About = () => {
                     </div>
                 </div>
                 <div className="md:flex-row-reverse md:flex mt-16 mb-12 md:m-10 md:items-center md:mr-[22rem] ">
-                    <img src={phone3} alt="hi" className=" relative right-[-10rem] h-[21rem] md:left-[19rem] md:h-[38rem] md:w-auto" />
+                    <img src={phone3} alt="hi" className=" relative right-[-10rem] h-[21rem] md:left-[16rem] md:h-[32rem] md:w-auto" />
                     <div className="flex flex-col m-5 pl-4 md:w-[30rem]  md:pr-[2rem]">
                         <h2 className=" text-2xl font-semibold text-left m-1 md:text-4xl md:w-[40rem] ">Earn rewards as you spend</h2>
                         <p className="text-left font-md m-1 md:text-lg ">We are building a digital community that will empower you to take control of your money and make it work for you</p>
