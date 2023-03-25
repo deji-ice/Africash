@@ -1,17 +1,16 @@
 import { useState } from "react";
+import Africash from "../assets/Frame 5 (1).png"
 
 export default function NavBar() {
     const [navbar, setNavbar] = useState(false);
 
     return (
-        <nav className="w-full bg-white shadow fixed z-10 top-0 ">
-            <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+        <nav className="w-full bg-white shadow fixed z-20 top-0 ">
+            <div className="justify-between px-4 mx-auto md:max-w-7xl md:items-center lg:flex md:px-8">
                 <div>
-                    <div className="flex items-center justify-between py-3 md:py-5 md:block">
-                        <a href="javascript:void(0)">
-                            <h2 className="text-2xl font-bold text-black">Africash</h2>
-                        </a>
-                        <div className="md:hidden">
+                    <div className="flex items-center justify-between py-3 md:py-5 ">
+                        <img src={Africash} alt="africash logo" className="" />
+                        <div className="lg:hidden">
                             <button
                                 className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
                                 onClick={() => setNavbar(!navbar)}
@@ -51,54 +50,46 @@ export default function NavBar() {
                 </div>
                 <div>
                     <div
-                        className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
-                            navbar ? "block" : "hidden"
-                        }`}
-                    >
-                        <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                            <li className="text-black hover:text-indigo-200">
-                                <a href="javascript:void(0)">Home</a>
+                        className={`flex-1 justify-self-center pb-3 mt-8 lg:block lg:pb-0 md:mt-0 ${navbar ? "block" : "hidden"}`}>
+                        <ul
+                            className="items-center justify-center  md:text-sm space-y-8 md:ml-[32rem] md:flex
+                            lg:flex-row md:flex-col lg:space-x-6 lg:mr-14 lg:space-y-0 md:space-x-10 md:space-y-8">
+                            <li className="text-black  md:min-w-fit hover:text-[#068353] ">
+                                <a href="javascript:void(0)">About</a>
                             </li>
-                            <li className="text-black hover:text-indigo-200">
+                            <li className="text-black md:min-w-fit hover:text-[#068353]">
+                                <a href="javascript:void(0)">Feature</a>
+                            </li>
+                            <li className="text-black md:min-w-fit hover:text-[#068353]">
                                 <a href="javascript:void(0)">Blog</a>
                             </li>
-                            <li className="text-black hover:text-indigo-200">
-                                <a href="javascript:void(0)">About US</a>
-                            </li>
-                            <li className="text-black hover:text-indigo-200">
-                                <a href="javascript:void(0)">Contact US</a>
+                            <li className="text-black md:min-w-fit hover:text-[#068353]">
+                                <a href="javascript:void(0)">Contact</a>
                             </li>
                         </ul>
+                        <div className="mt-5 space-y-2 space-x-2 flex items-center lg:hidden">
+                            <button className="w-1/2 px-4 py-2 text-center text-[#068353]
+                            bg-white rounded-3xl  border-[#068353] border-[0.3px] mx-10 pl-3 p-1 items-center shadow hover:bg-[#068353] hover:text-white ">
+                                Sign in
+                            </button>
 
-                        <div className="mt-3 space-y-2 lg:hidden md:inline-block">
-                    <a
-                        href="javascript:void(0)"
-                        className="inline-block w-full px-4 py-2 text-center text-[#45ae7b] bg-white rounded-md shadow hover:bg-gray-800"
-                    >
-                        Sign in
-                    </a>
-                    <a
-                        href="javascript:void(0)"
-                        className="inline-block w-full px-4 py-2 text-center text-gray-800 bg-white rounded-md shadow hover:bg-gray-100"
-                    >
-                        Sign up
-                    </a>
-                </div>
+                            <button className="w-1/2 px-4 py-2 text-center text-white 
+                            bg-[#068353] mx-10 pl-3 p-1 items-center  rounded-3xl shadow hover:bg-green-600" >
+                                Sign up
+                            </button>
+
+                        </div>
                     </div>
                 </div>
-                <div className="hidden space-x-2 md:inline-block">
-                    <a
-                        href="javascript:void(0)"
-                        className="px-4 py-2 text-[#45ae7b] bg-white rounded-md shadow hover:bg-gray-800"
-                    >
+                <div className="hidden space-x-2  lg:flex md:hidden ">
+                    <button className="inline-block w-[6rem] py-2 text-center text-[#068353] border-[#068353] border-[0.3px]
+                     bg-white rounded-3xl md:text-sm shadow hover:bg-[#068353] hover:text-white">
                         Sign in
-                    </a>
-                    <a
-                        href="javascript:void(0)"
-                        className="px-4 py-2 text-white bg-[#45ae7b] rounded-md shadow hover:bg-[#8af1bb]"
-                    >
+                    </button>
+
+                    <button className="inline-block py-2 text-sm  w-[6rem] text-center text-white bg-[#068353] rounded-3xl shadow hover:bg-green-600" >
                         Sign up
-                    </a>
+                    </button>
                 </div>
             </div>
         </nav>
