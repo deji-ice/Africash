@@ -54,16 +54,16 @@ export default function NavBar() {
                         <ul
                             className="items-center justify-center  md:text-sm space-y-8 md:ml-[32rem] md:flex
                             lg:flex-row md:flex-col lg:space-x-6 lg:mr-14 lg:space-y-0 md:space-x-10 md:space-y-8">
-                            <li className="text-black  md:min-w-fit hover:text-[#068353] ">
+                            <li className="text-black  md:min-w-fit hover:text-[#068353] hover:underline underline-offset-4  ">
                                 <a href="javascript:void(0)">About</a>
                             </li>
-                            <li className="text-black md:min-w-fit hover:text-[#068353]">
+                            <li className="text-black md:min-w-fit hover:text-[#068353] hover:underline underline-offset-4 ">
                                 <a href="javascript:void(0)">Feature</a>
                             </li>
-                            <li className="text-black md:min-w-fit hover:text-[#068353]">
+                            <li className="text-black md:min-w-fit hover:text-[#068353] hover:underline underline-offset-4 ">
                                 <a href="javascript:void(0)">Blog</a>
                             </li>
-                            <li className="text-black md:min-w-fit hover:text-[#068353]">
+                            <li className="text-black md:min-w-fit hover:text-[#068353] hover:underline underline-offset-4 ">
                                 <a href="javascript:void(0)">Contact</a>
                             </li>
                         </ul>
