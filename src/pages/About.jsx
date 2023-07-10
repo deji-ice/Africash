@@ -12,7 +12,7 @@ import download from "../assets/ant-design_download-outlined.svg"
 const About = () => {
     return (
         <>
-            <div className="flex flex-col items-center  mt-5 md:flex-row md:space-x-1 md:items-center md:mt-20 md:ml-20 ">
+            <div className="scroll-smooth flex flex-col items-center  mt-5 md:flex-row md:space-x-1 md:items-center md:mt-20 md:ml-20 ">
                 <div className="flex flex-col items-center mt-14 md:mt-0">
                     <div className="max-w-[36rem] md:max-w-[56rem] mt-14 md:w-[50rem] z-10 md:mt-0">
                         <h2 className="md:text-5xl text-4xl font-bold md:max-w-fit md:z-10 text-center m-3 md:text-left md:m-5 md:flex-nowrap">Africa in one financial platform</h2>
